@@ -1,3 +1,8 @@
+import { vars } from "./variables.js";
+
+const { user, password, main, submit } = vars;
+let { flag } = vars;
+
 const isValid = () => {
   if (user.value.trim() === "" || password.value.trim() === "") {
     let dato = `Please fill your user and password`.toUpperCase();
@@ -37,15 +42,16 @@ const showData = (data) => {
 };
 
 const getData = async () => {
+  const access_key = "c736948ab70415d6e35c802fec44bf0e";
   try {
     const {
       data: { ip },
     } = await axios.get("https://api.ipify.org?format=json");
-    const {
-      data: { query },
-    } = await axios.get(`http://api.ipstack.com/${ip}
-    ? access_key = ${"c736948ab70415d6e35c802fec44bf0e"}`);
-
+    // console.log(ip);
+    // const datos = await axios.get(
+    //   `http://api.ipstack.com/${ip}?access_key=${access_key}`
+    // );
+    // console.log(datos);
     const {
       data: { hello },
     } = await axios.get(`https://fourtonfish.com/hellosalut/?ip=${ip}`);
@@ -53,4 +59,10 @@ const getData = async () => {
   } catch (error) {
     console.log(error);
   }
+};
+
+export const methods = {
+  isValid,
+  getData,
+  showData,
 };
