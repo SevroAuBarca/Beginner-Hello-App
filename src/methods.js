@@ -48,7 +48,7 @@ const getData = async () => {
 
     const {
       data: { hello },
-    } = await axios.get(`https://fourtonfish.com/hellosalut/?ip=${query}`);
+    } = await axios.get(`https://fourtonfish.com/hellosalut/?ip=${ip}`);
     return hello;
   } catch (error) {
     console.log(error);
