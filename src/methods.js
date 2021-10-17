@@ -43,7 +43,8 @@ const getData = async () => {
     } = await axios.get("https://api.ipify.org?format=json");
     const {
       data: { query },
-    } = await axios.get(`http://ip-api.com/json/${ip}`);
+    } = await axios.get(`http://api.ipstack.com/${ip}
+    ? access_key = ${"c736948ab70415d6e35c802fec44bf0e"}`);
 
     const {
       data: { hello },

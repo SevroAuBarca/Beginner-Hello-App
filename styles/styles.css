@@ -40,8 +40,8 @@
   height: 2em;
   border-radius: 5px;
 }
-* .container .header__nav form input[type=text],
-* .container .header__nav form input[type=password] {
+* .container .header__nav form input[type="text"],
+* .container .header__nav form input[type="password"] {
   background: transparent;
   border: 2px solid #534768;
   font-size: 1em;
@@ -59,21 +59,26 @@
   font-size: 1em;
   z-index: 3;
 }
-* .container .header__nav form input[type=text]:placeholder-shown + label,
-* .container .header__nav form input[type=password]:placeholder-shown + label {
+* .container .header__nav form input[type="text"]:placeholder-shown + label,
+*
+  .container
+  .header__nav
+  form
+  input[type="password"]:placeholder-shown
+  + label {
   opacity: 0;
 }
-* .container .header__nav form input[type=submit] {
+* .container .header__nav form input[type="submit"] {
   font-size: 1em;
   background: #6505ff;
   border: none;
   padding: 5px;
   color: #eee;
 }
-* .container .header__nav form input[type=submit]:hover {
+* .container .header__nav form input[type="submit"]:hover {
   background: #7c3ef0;
 }
-* .container .header__nav form input[type=submit]:active {
+* .container .header__nav form input[type="submit"]:active {
   background: #534768;
 }
 * .container .main__data {
